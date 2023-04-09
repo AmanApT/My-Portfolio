@@ -72,7 +72,7 @@ const ContactMe = ({ isLightTheme, setIsLightTheme }) => {
           ></i>
         </a>
         <a
-          href="https://www.linkedin.com/in/aman-pathak-original/"
+          href="https://github.com/AmanApT"
           className={isLightTheme ? "socialLinkDiv" : "socialLinkDivDark"}
         >
           <i
