@@ -128,9 +128,11 @@ const SideBar = ({
                             backgroundColor: "rgb(105, 104, 105)",
                             color: "#fff",
                             margin: "2px",
+                            transition: "1s ease",
                           }}
                           key={index}
                           className="b-block mb-1"
+                         
                         >
                           {tech}
                         </span>
