@@ -115,7 +115,7 @@ const SideBar = ({
                   <p style={{ paddingBottom: "3%" }} className="te mb-4">
                     {data.description}
                   </p>
-                  <img src={data.imageUrl} />
+                  <img src={data.imageUrl} alt="this is an image" />
                   <h4>About</h4>
                   <p>{data.about}</p>
                   <h4>Technologies</h4>

@@ -47,7 +47,7 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
               <div id="stars-group-1"></div>
         <div id="stars-group-2"></div>
         <div id="stars-group-3"></div>
-              <img src={data.imageUrl} className="cardImage" />
+              <img src={data.imageUrl} className="cardImage" alt="project-image" />
               <div class="content__slate">
                 <h3>{data.title}</h3>
                 <p>{data.description}</p>
