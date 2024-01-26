@@ -19,7 +19,7 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
     } else {
       audio.pause();
     }
-  }, [isPlaying]);
+  }, [isPlaying,audio]);
 
   return (
     <div className={isLightTheme ? "lightModeTop" : "top"}>

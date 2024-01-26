@@ -34,11 +34,14 @@ const SideBar = ({
   css: styling,
   data,
 }) => {
-  const handleKeyPress = useCallback((e) => {
-    if (e.key === "Escape") {
-      setShow(false);
-    }
-  }, []);
+  const handleKeyPress = useCallback(
+    (e) => {
+      if (e.key === "Escape") {
+        setShow(false);
+      }
+    },
+    [setShow]
+  );
 
   useEffect(() => {
     window.addEventListener("keydown", handleKeyPress);
@@ -46,7 +49,7 @@ const SideBar = ({
     return () => {
       window.removeEventListener("keydown", handleKeyPress);
     };
-  }, []);
+  }, [handleKeyPress]);
 
   // if (show === true) {
   //   const skills = document.getElementById("techStack");
