@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import SideBar from "./Sidebar";
 import PROJECTS_DATA from "./Project_Data";
 import "aos/dist/aos.css";
