@@ -997,9 +997,7 @@ div.content__slate {
     padding-top: 14%;
     width: 60%;
   }
-  .contactMe {
-    /* height: 50vh; */
-  }
+
   .socialLinkDiv {
     margin: 5%;
   }
@@ -1008,9 +1006,7 @@ div.content__slate {
   }
 }
 @media screen and (max-width: 500px) {
-  .contactMe {
-    /* height: 40vh; */
-  }
+
   .contactMeUpDiv {
     flex-direction: column;
     text-align: center;
