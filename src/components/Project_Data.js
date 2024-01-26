@@ -17,6 +17,21 @@ const PROJECTS_DATA = [
     ],
   },
   {
+    title: "Adest",
+    description: "Adest provide free of cost file conversion service",
+    about:
+      "Adest provide free of cost file conversion service, enabling multiple conversions and compressions at once, saves users significant time and costs.",
+    link: "https://adest.vercel.app/",
+    imageUrl: "../images/adest.webp",
+    github: "https://github.com/AmanApT/adest",
+    type: ["project", "open-source", "tools"],
+    technologies: [
+      "Next JS",
+      "TypeScript",
+      "MUI",
+    ],
+  },
+  {
     title: "Profile Picker",
     description: "Pick best profiles in few clicks",
     about:
@@ -35,17 +50,6 @@ const PROJECTS_DATA = [
     ],
   },
   {
-    title: "My Music",
-    description: "Music Website made using only HTML, CSS and Javascript",
-    about:
-      "Created a fully functional Music Website using purely front end.The project showcase Advance JavaScript skills and Advance CSS implementation. Currently the website is mainly for desktop view.",
-    link: "https://amanapt.github.io/MyMusic-Webapp/",
-    imageUrl: "../images/MyMusic.png",
-    github: "https://github.com/AmanApT/MyMusic-Webapp",
-    type: ["project", "open-source", "tools"],
-    technologies: ["HTML", "CSS", "Javascript"],
-  },
-  {
     title: "Invoicer",
     description: "Create simple and beautiful invoices",
     about:
@@ -55,6 +59,17 @@ const PROJECTS_DATA = [
     github: "",
     type: ["project", "open-source", "tools"],
     technologies: ["React", "Material UI"],
+  },
+  {
+    title: "My Music",
+    description: "Music Website made using only HTML, CSS and Javascript",
+    about:
+      "Created a fully functional Music Website using purely front end.The project showcase Advance JavaScript skills and Advance CSS implementation. Currently the website is mainly for desktop view.",
+    link: "https://amanapt.github.io/MyMusic-Webapp/",
+    imageUrl: "../images/MyMusic.png",
+    github: "https://github.com/AmanApT/MyMusic-Webapp",
+    type: ["project", "open-source", "tools"],
+    technologies: ["HTML", "CSS", "Javascript"],
   },
   {
     title: "Interior Design",
