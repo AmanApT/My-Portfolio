@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import SideBar from "./Sidebar";
 import PROJECTS_DATA from "./Project_Data";
-import "aos/dist/aos.css";
-
 const Projects = ({ isLightTheme, setIsLightTheme }) => {
   //   const asideRef = useRef();
 
@@ -27,7 +25,7 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
         verticals. Eventually, I decided that it would be a fun challenge to try
         designing and building my own.
       </p>
-      <div className="sc-gZMcBi jwbuPS" data-aos="fade-down">
+      <div className="sc-gZMcBi jwbuPS">
         {PROJECTS_DATA.map((data) => (
           <>
             <div
