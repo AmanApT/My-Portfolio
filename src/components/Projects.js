@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SideBar from "./Sidebar";
 import PROJECTS_DATA from "./Project_Data";
+
 const Projects = ({ isLightTheme, setIsLightTheme }) => {
   //   const asideRef = useRef();
 
@@ -28,7 +29,48 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
       <div className="sc-gZMcBi jwbuPS">
         {PROJECTS_DATA.map((data) => (
           <>
-            <div
+              <div style={{background: `${isLightTheme ? "#7AC7F7" :"#1A242C" }`}} className="project-div"> 
+               <div className="project-div-image" style={{background:`url(${data.imageUrl})`,  backgroundSize: "cover"}}>
+
+               </div>
+               <div className="project-div-right">
+                <h1>
+                  {data.title}
+                </h1>
+                <p>
+                  {data.about}
+                </p>
+                {data.technologies && (
+                    <p className="d-flex flex-wrap">
+                      {data.technologies.map((tech, index) => (
+                        <span
+                          style={{
+                            fontSize: "15px",
+                            backgroundColor: "rgb(105, 104, 105)",
+                            color: "#fff",
+                            margin: "2px",
+                            padding:"4px",
+                            transition: "1s ease",
+                          }}
+                          key={index}
+                          className="b-block mb-1"
+                         
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </p>
+                  )}
+            {/* <FontAwesomeIcon icon="fa-solid fa-book-open" /> */}
+            <p    onClick={() => {
+                setProjectData(data);
+                setShow(true);
+                const skills = document.getElementsByClassName("techStack")[0];
+                skills.style.opacity = "0";
+              }} className="click-to-open">Click to open</p>
+               </div>
+              </div>
+            {/* <div
 
               role="gridcell"
               id="cardHover"
@@ -57,7 +99,7 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
                   ))}
                 </p>
               </div>
-            </div>
+            </div> */}
           </>
         ))}
         <div id="stars-group-1"></div>

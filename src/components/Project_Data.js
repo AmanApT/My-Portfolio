@@ -1,11 +1,15 @@
 const PROJECTS_DATA = [
   {
-    title: "CEmission",
+    title: "Reclaim Green - Carbon Emission Predictor ",
+    zIndex: 2,
     description: "Calculate your carbon emissions",
+    // about:
+    //   "Reclaim Green calculate carboon footprints on individual and industry level. The project uses React for the UI part and Backend is based upon Machine Learning that trains dataset for calculating the carbon emissions. The project uses Firestore database as well to store user data and display their past footprints.  ",
     about:
-      "Reclaim Green calculate carboon footprints on individual and industry level. The project uses React for the UI part and Backend is based upon Machine Learning that trains dataset for calculating the carbon emissions. The project uses Firestore database as well to store user data and display their past footprints.  ",
+      "Reclaim Green calculate carboon footprints on individual and industry level. The project uses React for the UI part and Backend is based upon Machine Learning that trains dataset for calculating the carbon emissions",
     link: "https://github.com/AmanApT/CEmission",
-    imageUrl: "../images/CEmissionImage.webp",
+    imageUrl: "../images/gif2.gif",
+    // imageUrl: "../images/CEmissionImage.webp",
     github: "",
     type: ["project", "open-source", "tools"],
     technologies: [
@@ -17,27 +21,27 @@ const PROJECTS_DATA = [
     ],
   },
   {
-    title: "Adest",
+    title: "Adest - All format converter",
+    zIndex: 3,
     description: "Adest provide free of cost file conversion service",
     about:
       "Adest provide free of cost file conversion service, enabling multiple conversions and compressions at once, saves users significant time and costs.",
     link: "https://adest.vercel.app/",
-    imageUrl: "../images/adest.webp",
+    // imageUrl: "../images/adest.webp",
+    imageUrl: "../images/gif.gif",
     github: "https://github.com/AmanApT/adest",
     type: ["project", "open-source", "tools"],
-    technologies: [
-      "Next JS",
-      "TypeScript",
-      "MUI",
-    ],
+    technologies: ["Next JS", "TypeScript", "MUI"],
   },
   {
-    title: "Profile Picker",
+    title: "Profile Picker - Profile Shortlister",
+    zIndex: 4,
     description: "Pick best profiles in few clicks",
     about:
       "Profile Picker helps the corporates to filter through tons of CVs and resumes and sort the most suitable ones according to their need.",
     link: "https://github.com/VigyaAi/Profile-picker-",
     imageUrl: "../images/Profile-Picker.png",
+    // imageUrl: "../images/gif.gif",
     github: "",
     type: ["project", "open-source", "tools"],
     technologies: [
@@ -51,6 +55,7 @@ const PROJECTS_DATA = [
   },
   {
     title: "Invoicer",
+    zIndex: 5,
     description: "Create simple and beautiful invoices",
     about:
       "Invoicer creates beautiful invoices according to the need of client. React based powerful UI not only provides dynamic functionalities but also provides easy to use experience to the client.",
@@ -62,6 +67,7 @@ const PROJECTS_DATA = [
   },
   {
     title: "My Music",
+    zIndex: 6,
     description: "Music Website made using only HTML, CSS and Javascript",
     about:
       "Created a fully functional Music Website using purely front end.The project showcase Advance JavaScript skills and Advance CSS implementation. Currently the website is mainly for desktop view.",
@@ -73,6 +79,7 @@ const PROJECTS_DATA = [
   },
   {
     title: "Interior Design",
+    zIndex: 7,
     description:
       "Website made for an interior designing firm for a trial purpose.",
     about:
