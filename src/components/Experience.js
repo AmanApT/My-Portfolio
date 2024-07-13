@@ -43,7 +43,7 @@ const Experience = ({ isLightTheme }) => {
             organization, improving data retrieval by 25 percent
             </p> */}
             <div class="bottom">
-              <a href="https://www.idesign.market/" target="_blank">
+              <a href="https://www.idesign.market/" rel="noreferrer" target="_blank">
                 iDesign.Market
               </a>
               {/* <i>- Someone famous</i> */}
@@ -63,7 +63,7 @@ const Experience = ({ isLightTheme }) => {
               allows me to work on things that I am passionate about.
             </p>
             <div class="bottom">
-              <a href="https://www.freelancer.in/u/amanpathak26"  target="_blank">
+              <a href="https://www.freelancer.in/u/amanpathak26" rel="noreferrer" target="_blank">
                 Freelance Profile
               </a>
               {/* <i>- Someone famous</i> */}
@@ -84,7 +84,7 @@ const Experience = ({ isLightTheme }) => {
               few clicks.
             </p>
             <div class="bottom">
-              <a href="https://www.vigyaai.com/"  target="_blank">VigyaAi</a>
+              <a href="https://www.vigyaai.com/" rel="noreferrer" target="_blank">VigyaAi</a>
               {/* <i>- Someone famous</i> */}
             </div>
           </section>
@@ -106,7 +106,7 @@ const Experience = ({ isLightTheme }) => {
               hackathon.
             </p>
             <div class="bottom">
-              <a  target="_blank" href="https://lablab.ai/u/@AmanAp/cld34glda001ade0seyrvzix2">
+              <a rel="noreferrer"  target="_blank" href="https://lablab.ai/u/@AmanAp/cld34glda001ade0seyrvzix2">
                 {" "}
                 Certification
               </a>
