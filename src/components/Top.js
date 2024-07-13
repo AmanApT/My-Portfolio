@@ -139,6 +139,35 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
               ></path>
             </svg>
           </Link>
+          
+          <a
+            target="_blank"
+            rel="noreferrer"
+            style={{ cursor: "pointer", fontSize: "1.2rem", textDecoration:"none", color:"black" }}
+            href="https://www.linkedin.com/in/aman-pathak-original/overlay/1715615214742/single-media-viewer/?profileId=ACoAACnHZDwB2byYLHfmtPl2ukF0KuNxXqQuXtM"
+            // to={isLightTheme ? "Resume" : "Resume"}
+            
+            className="nav-links"
+          >
+            Resume
+            <svg
+              width="70"
+              height="7"
+              viewBox="0 0 83 7"
+              fill="none"
+              class="nav-links-svg"
+              // display={"none"}
+            >
+              <path
+                d="M1.36658 3.43961C5.25984 2.21819 9.10198 2.35113 13.042 1.74498C16.5973 1.19801 20.2829 1.33594 23.9226 1.33594C27.3725 1.33594 30.9056 1.5463 34.2891 1.5463C35.5441 1.5463 37.2693 2.05276 38.3912 2.55139C39.6341 3.10379 41.4642 3.25919 42.8089 3.4513C44.602 3.70745 46.3029 3.86034 48.1616 3.86034C49.0606 3.86034 49.9761 3.43961 50.9081 3.43961C51.4475 3.43961 52.841 3.17686 53.3273 2.97213C55.1318 2.21235 56.3597 3.3818 57.5346 4.49145C58.2657 5.18187 59.2379 3.46932 60.0123 3.18249C60.9779 2.82484 61.679 2.53519 62.4783 3.33443C62.7994 3.65557 63.8588 5.51258 64.3716 5.22773C65.485 4.60917 66.7235 4.15447 67.7258 3.33443C69.0587 2.24383 71.3278 2.48068 73 2.38777C74.4626 2.30652 75.525 2.05998 77 2.38777C77.7415 2.55256 78.7556 2.38777 79.518 2.38777C80.2804 2.38777 81.1728 1.74498 82 1.74498"
+                stroke="hsl(53deg, 100%, 50%)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+
         </div>
         <div class="icons">
           <i
