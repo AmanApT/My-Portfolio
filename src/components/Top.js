@@ -143,7 +143,7 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
           <a
             target="_blank"
             rel="noreferrer"
-            style={{ cursor: "pointer", fontSize: "1.2rem", textDecoration:"none", color:"black" }}
+            style={{ cursor: "pointer", fontSize: "1.2rem", textDecoration:"none", color: isLightTheme?"black" :"white" }}
             href="https://www.linkedin.com/in/aman-pathak-original/overlay/1715615214742/single-media-viewer/?profileId=ACoAACnHZDwB2byYLHfmtPl2ukF0KuNxXqQuXtM"
             // to={isLightTheme ? "Resume" : "Resume"}
             
