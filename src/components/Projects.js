@@ -19,57 +19,65 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
     <section id={isLightTheme ? "projects" : "projectsDark"}>
       <p class="projectsHeading">Projects</p>
       <div id="stars-group-1"></div>
-        <div id="stars-group-2"></div>
-        <div id="stars-group-3"></div>
+      <div id="stars-group-2"></div>
+      <div id="stars-group-3"></div>
       <p class="projectsSubHeading">
-        I've used hundreds of web and mobile apps in different industries and
-        verticals. Eventually, I decided that it would be a fun challenge to try
-        designing and building my own.
+        I've worked with countless web and mobile apps across various
+        industries, and eventually, I took on the challenge of designing and
+        building my own.
       </p>
       <div className="sc-gZMcBi jwbuPS">
         {PROJECTS_DATA.map((data) => (
           <>
-              <div style={{background: `${isLightTheme ? "#7AC7F7" :"#1A242C" }`}} className="project-div"> 
-               <div className="project-div-image" style={{background:`url(${data.imageUrl})`,  backgroundSize: "cover"}}>
-
-               </div>
-               <div className="project-div-right">
-                <h1>
-                  {data.title}
-                </h1>
-                <p>
-                  {data.about}
-                </p>
+            <div
+              style={{ background: `${isLightTheme ? "#7AC7F7" : "#1A242C"}` }}
+              className="project-div"
+            >
+              <div
+                className="project-div-image"
+                style={{
+                  background: `url(${data.imageUrl})`,
+                  backgroundSize: "cover",
+                }}
+              ></div>
+              <div className="project-div-right">
+                <h1>{data.title}</h1>
+                <p>{data.about}</p>
                 {data.technologies && (
-                    <p className="d-flex flex-wrap">
-                      {data.technologies.map((tech, index) => (
-                        <span
-                          style={{
-                            fontSize: "15px",
-                            backgroundColor: "rgb(105, 104, 105)",
-                            color: "#fff",
-                            margin: "2px",
-                            padding:"4px",
-                            transition: "1s ease",
-                          }}
-                          key={index}
-                          className="b-block mb-1"
-                         
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </p>
-                  )}
-            {/* <FontAwesomeIcon icon="fa-solid fa-book-open" /> */}
-            <p    onClick={() => {
-                setProjectData(data);
-                setShow(true);
-                const skills = document.getElementsByClassName("techStack")[0];
-                skills.style.opacity = "0";
-              }} className="click-to-open">Click to open</p>
-               </div>
+                  <p className="d-flex flex-wrap">
+                    {data.technologies.map((tech, index) => (
+                      <span
+                        style={{
+                          fontSize: "15px",
+                          backgroundColor: "rgb(105, 104, 105)",
+                          color: "#fff",
+                          margin: "2px",
+                          padding: "4px",
+                          transition: "1s ease",
+                        }}
+                        key={index}
+                        className="b-block mb-1"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </p>
+                )}
+                {/* <FontAwesomeIcon icon="fa-solid fa-book-open" /> */}
+                <p
+                  onClick={() => {
+                    setProjectData(data);
+                    setShow(true);
+                    const skills =
+                      document.getElementsByClassName("techStack")[0];
+                    skills.style.opacity = "0";
+                  }}
+                  className="click-to-open"
+                >
+                  Click to open
+                </p>
               </div>
+            </div>
             {/* <div
 
               role="gridcell"
@@ -103,7 +111,7 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
           </>
         ))}
         <div id="stars-group-1"></div>
-        
+
         <SideBar
           setShow={setShow}
           show={show}
@@ -111,7 +119,6 @@ const Projects = ({ isLightTheme, setIsLightTheme }) => {
           isLightTheme={isLightTheme}
         />
       </div>
-      
     </section>
   );
 };

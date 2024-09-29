@@ -18,10 +18,9 @@ const AboutMe = ({ isLightTheme, setIsLightTheme }) => {
             isLightTheme ? "rightSubDescription-dark" : "rightSubDescription"
           }
         >
-          I am a free-spirited web developer, constantly seeking to expand my
-          skills and push boundaries. I approach coding as an art form, using my
-          creativity to build websites that are both functional and visually
-          stunning.
+          I'm an engineer driven by creativity, constantly pushing boundaries to
+          build websites that are both functional and visually stunning while
+          expanding my skills along the way.
         </p>
       </div>
     </section>
