@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import confetti from "canvas-confetti"; 
 const ContactMe = ({ isLightTheme, setIsLightTheme }) => {
   // const handleTheme = () => {
   //   const contactMe = document.getElementsByClassName("contactMe")[0];
@@ -12,6 +13,61 @@ const ContactMe = ({ isLightTheme, setIsLightTheme }) => {
 
   //   setIsLightTheme(!isLightTheme);
   // };
+  const soundRef = useRef(null);
+  const defaults = {
+    disableForReducedMotion: true,
+  };
+  const fire = (particleRatio, opts) => {
+    confetti(
+      Object.assign({}, defaults, opts, {
+        particleCount: Math.floor(200 * particleRatio),
+      })
+    );
+  };
+  const confettiExplosion = (origin) => {
+    fire(0.25, {
+      spread: 26,
+      startVelocity: 55,
+      origin,
+    });
+    fire(0.2, {
+      spread: 60,
+      origin,
+    });
+    fire(0.35, {
+      spread: 100,
+      decay: 0.91,
+      origin,
+    });
+    fire(0.1, {
+      spread: 120,
+      startVelocity: 25,
+      decay: 0.92,
+      origin,
+    });
+    fire(0.1, {
+      spread: 120,
+      startVelocity: 45,
+      origin,
+    });
+  };
+  const handleConfettiClick = (event) => {
+    const rect = event.target.getBoundingClientRect();
+    const center = {
+      x: rect.left + rect.width / 2,
+      y: rect.top + rect.height / 2,
+    };
+    const origin = {
+      x: center.x / window.innerWidth,
+      y: center.y / window.innerHeight,
+    };
+
+    if (soundRef.current) {
+      soundRef.current.currentTime = 0;
+      soundRef.current.play();
+    }
+    confettiExplosion(origin);
+  };
 
   return (
     <div className={isLightTheme ? "contactMe" : "contactMeDark"}>
@@ -94,10 +150,20 @@ const ContactMe = ({ isLightTheme, setIsLightTheme }) => {
           ></i>
         </a>
       </div>
-
+          
       <div className={isLightTheme ? "handcraftedBy" : "handcraftedByDark"}>
         <p>Handcrafted by me © Aman Pathak</p>
       </div>
+      <div className="celebrate">
+      <audio ref={soundRef} id="sound" src="../../celebrate.mp3"></audio> {/* Add your sound file path */}
+      <button className="js-confetti" onClick={handleConfettiClick}>
+      <img
+        style={{width:"2rem"}}
+         src="images/celebrate.png"
+        alt="Celebrate"
+      />
+      </button>
+    </div>
     </div>
   );
 };

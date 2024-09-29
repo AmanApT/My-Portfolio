@@ -1156,3 +1156,18 @@ div.content__slate {
   padding: 2%;
   color: white;
 }
+
+
+.celebrate button{
+  all:unset;
+  position: absolute;
+  right: 2rem;
+  bottom :1rem;
+  cursor: pointer;
+}
+.celebrate button:hover{
+  transform: scale(1.1);
+  
+  transition: all 200ms ease;
+
+}
