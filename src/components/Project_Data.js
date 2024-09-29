@@ -1,5 +1,27 @@
 const PROJECTS_DATA = [
   {
+    title: "Scribble.io - Personal Documentation Space ",
+    zIndex: 2,
+    description: "Personal Documentation Space and Whiteboard",
+    // about:
+    //   "Reclaim Green calculate carboon footprints on individual and industry level. The project uses React for the UI part and Backend is based upon Machine Learning that trains dataset for calculating the carbon emissions. The project uses Firestore database as well to store user data and display their past footprints.  ",
+    about:
+      "Built a high-performance document and diagram engineering tool that enables users to efficiently edit, organize, and manage digital content, achieving 40% faster load times.",
+    github: "https://github.com/AmanApT/Scribble.io",
+    imageUrl: "../images/Scribble.gif",
+    // imageUrl: "../images/CEmissionImage.webp",
+    link: "https://scribble-io-ap.vercel.app/",
+    type: ["project", "open-source", "tools"],
+    technologies: [
+      "NextJS",
+      "TypeScript",
+      "ConvexDB",
+      "Kinde Auth",
+      "Shadcn",
+      "Tailwind",
+    ],
+  },
+  {
     title: "Reclaim Green - Carbon Emission Predictor ",
     zIndex: 2,
     description: "Calculate your carbon emissions",
@@ -77,19 +99,19 @@ const PROJECTS_DATA = [
     type: ["project", "open-source", "tools"],
     technologies: ["HTML", "CSS", "Javascript"],
   },
-  {
-    title: "Interior Design",
-    zIndex: 7,
-    description:
-      "Website made for an interior designing firm for a trial purpose.",
-    about:
-      "The website uses React to showcase User Interface. The firm aims to provide quality interior design solutions to client for their homes, offices, restaurants etc. The website is currently in Desktop view mode only (trial purposes).",
-    link: "https://amanapt.github.io/InteriorDesign/",
-    imageUrl: "../images/Interior_Design.webp",
-    github: "https://github.com/AmanApT/InteriorDesign",
-    type: ["project", "open-source", "tools"],
-    technologies: ["React", "Tailwind", "Boostrap", "Material UI"],
-  },
+  // {
+  //   title: "Interior Design",
+  //   zIndex: 7,
+  //   description:
+  //     "Website made for an interior designing firm for a trial purpose.",
+  //   about:
+  //     "The website uses React to showcase User Interface. The firm aims to provide quality interior design solutions to client for their homes, offices, restaurants etc. The website is currently in Desktop view mode only (trial purposes).",
+  //   link: "https://amanapt.github.io/InteriorDesign/",
+  //   imageUrl: "../images/Interior_Design.webp",
+  //   github: "https://github.com/AmanApT/InteriorDesign",
+  //   type: ["project", "open-source", "tools"],
+  //   technologies: ["React", "Tailwind", "Boostrap", "Material UI"],
+  // },
 ];
 
 export default PROJECTS_DATA;
