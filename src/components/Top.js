@@ -144,7 +144,7 @@ const Top = ({ isLightTheme, setIsLightTheme }) => {
             target="_blank"
             rel="noreferrer"
             style={{ cursor: "pointer", fontSize: "1.2rem", textDecoration:"none", color: isLightTheme?"black" :"white" }}
-            href="https://www.linkedin.com/in/aman-pathak-original/overlay/1715615214742/single-media-viewer/?profileId=ACoAACnHZDwB2byYLHfmtPl2ukF0KuNxXqQuXtM"
+            href="https://www.linkedin.com/in/aman-pathak-original/overlay/1724623290903/single-media-viewer/?profileId=ACoAACnHZDwB2byYLHfmtPl2ukF0KuNxXqQuXtM"
             // to={isLightTheme ? "Resume" : "Resume"}
             
             className="nav-links"
